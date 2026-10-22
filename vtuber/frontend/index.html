@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Open-LLM-Vtuber</title>
+    <script type="module" src="./heart-dialogue.mjs"></script>
+    <script type="module" src="./heart-realtime.mjs"></script>
+    <script type="module" crossorigin src="./assets/main-nu7uwxNJ.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-QEkl09-0.css">
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <!-- Static fallback: even if a module fails, the control cannot silently disappear. -->
+    <div id="heart-voice-control" style="position:fixed;right:18px;top:16px;z-index:1002;width:260px;max-width:calc(100vw - 36px);pointer-events:auto">
+      <button id="heart-voice-toggle" type="button" disabled style="width:100%;padding:10px 12px;border:2px solid #34d399;border-radius:10px;background:#065f46;color:white;font:600 15px/1.4 system-ui">语音控制加载中…</button>
+      <div id="heart-voice-hint" style="font:11px/1.5 system-ui;color:white;text-align:center">若持续未加载，请重新使用桌面 Live2D 启动入口。</div>
+      <div id="heart-asr-service" role="status" style="font:12px/1.6 system-ui;color:white">语音输入：正在检查本地识别…</div>
+      <div id="heart-voice-service" role="status" style="font:11px/1.5 system-ui;color:white;text-align:center"></div>
+    </div>
+  <script type="module" src="./heart-avatar.mjs"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+# This release is a byte-verified snapshot. Preserve BOM and line endings so
+# SOURCE_MANIFEST and the historical upgrade fingerprints survive checkout.
+# -text disables conversion; it does not disable ordinary source-code diffs.
+* -text

@@ -1,0 +1,2 @@
+# Preserve this release snapshot's byte fingerprints across Git checkout.
+* -text
